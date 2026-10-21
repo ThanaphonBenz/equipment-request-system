@@ -18,6 +18,8 @@
 
 เลือกติดตั้งและรันตามรูปแบบฐานข้อมูลที่ต้องการใช้งาน:
 
+### git clone https://github.com/ThanaphonBenz/equipment-request-system.git
+
 ### รูปแบบที่ 1: ต่อ Database On Cloud (MongoDB Atlas)
 ใช้สำหรับกรณีที่ต้องการดึงข้อมูลจาก Cloud ของ MongoDB Atlas
 
