@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Boxes,
   ClipboardCheck,
   ClipboardList,
   ClipboardPlus,
@@ -18,6 +17,7 @@ import {
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
+import { Logo } from "@/components/Logo";
 import { apiFetch } from "@/lib/api-client";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import type { UserDTO } from "@/types";
@@ -63,9 +63,7 @@ export function Sidebar({ user, pendingCount }: { user: UserDTO; pendingCount: n
 
   const brand = (
     <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 text-white">
-        <Boxes className="h-5 w-5" />
-      </span>
+      <Logo className="h-9 w-9 shrink-0 drop-shadow-sm" />
       <span className="leading-tight">
         <span className="block text-sm font-semibold text-slate-900">ระบบเบิกจ่ายอุปกรณ์</span>
         <span className="block text-xs text-slate-500">Equipment Request</span>
@@ -148,9 +146,7 @@ export function Sidebar({ user, pendingCount }: { user: UserDTO; pendingCount: n
         </nav>
 
         <div className="border-t border-slate-200 p-3">
-          <div className="mb-2">
-            <ThemeToggle />
-          </div>
+          <ThemeToggle className="mx-1 mb-3" />
           <div className="flex items-center gap-3 rounded-lg px-2 py-2">
             <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-indigo-100 text-sm font-semibold text-indigo-700">
               {initial}

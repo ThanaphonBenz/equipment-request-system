@@ -102,9 +102,67 @@ body {
   color: #c4b5fd;
 }
 
+/* แถบเลื่อนของสวิตช์ธีม: ในโหมดมืด bg-white ถูกแทนด้วยสีเดียวกับพื้นสวิตช์ จึงต้องยกให้สว่างกว่า */
+.dark .theme-toggle-thumb {
+  background-color: #1e293b;
+}
+
+.dark [class~="text-indigo-500"] {
+  color: #a5b4fc;
+}
+
 .dark input::placeholder,
 .dark textarea::placeholder {
   color: #94a3b8;
+}
+
+/* หน้า login: วงโคจรอุปกรณ์ + จุดสถานะ + แจ้งเตือน */
+@keyframes login-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes login-ping {
+  75%,
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+@keyframes login-toast {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.97);
+  }
+}
+.login-orbit {
+  animation: login-orbit 60s linear infinite;
+}
+.login-ping {
+  animation: login-ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.login-toast {
+  animation: login-toast 400ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@keyframes login-float {
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.login-float {
+  animation: login-float 6s ease-in-out infinite;
+}
+.login-float-delayed {
+  animation: login-float 6s ease-in-out 3s infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .login-orbit,
+  .login-ping,
+  .login-toast,
+  .login-float,
+  .login-float-delayed {
+    animation: none;
+  }
 }
 
 /* เอฟเฟกต์เปิด modal (<dialog>) */
