@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-noto-sans-thai), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-slate-50: #0b1220;
+  --color-slate-100: #111c2e;
+  --color-slate-200: #1e293b;
+  --color-slate-300: #334155;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #a8b5c7;
+  --color-slate-600: #cbd5e1;
+  --color-slate-700: #e2e8f0;
+  --color-indigo-50: #24234b;
+  --color-indigo-100: #312e61;
+  --color-indigo-200: #433f7a;
+  --color-emerald-50: #123c35;
+  --color-emerald-100: #174b3e;
+  --color-emerald-200: #17634f;
+  --color-amber-50: #45351d;
+  --color-amber-100: #55411e;
+  --color-amber-200: #705326;
+  --color-rose-50: #482633;
+  --color-rose-100: #572b3a;
+  --color-rose-200: #743447;
+  --color-sky-50: #15354a;
+  --color-violet-50: #35264f;
+}
+
+.dark [class~="bg-white"] {
+  background-color: #111c2e;
+}
+
+.dark body {
+  background-color: #0b1220;
+  color: #e2e8f0;
+}
+
+.dark [class~="text-slate-900"],
+.dark [class~="text-slate-800"] {
+  color: #f1f5f9;
+}
+
+.dark [class~="text-slate-700"] {
+  color: #e2e8f0;
+}
+
+.dark [class~="text-slate-600"] {
+  color: #cbd5e1;
+}
+
+.dark [class~="text-slate-500"] {
+  color: #a8b5c7;
+}
+
+.dark [class~="text-slate-400"] {
+  color: #94a3b8;
+}
+
+.dark [class~="text-slate-300"] {
+  color: #64748b;
+}
+
+.dark [class~="text-indigo-700"],
+.dark [class~="text-indigo-600"] {
+  color: #a5b4fc;
+}
+
+.dark [class~="text-emerald-800"],
+.dark [class~="text-emerald-700"],
+.dark [class~="text-emerald-600"] {
+  color: #6ee7b7;
+}
+
+.dark [class~="text-amber-800"],
+.dark [class~="text-amber-700"],
+.dark [class~="text-amber-600"] {
+  color: #fcd34d;
+}
+
+.dark [class~="text-rose-900"],
+.dark [class~="text-rose-800"],
+.dark [class~="text-rose-700"],
+.dark [class~="text-rose-600"],
+.dark [class~="text-rose-500"] {
+  color: #fda4af;
+}
+
+.dark [class~="text-sky-600"] {
+  color: #7dd3fc;
+}
+
+.dark [class~="text-violet-700"],
+.dark [class~="text-violet-600"] {
+  color: #c4b5fd;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* เอฟเฟกต์เปิด modal (<dialog>) */
+@keyframes dialog-pop {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+}
+@keyframes backdrop-fade {
+  from {
+    opacity: 0;
+  }
+}
+dialog.dialog-pop[open] {
+  animation: dialog-pop 160ms ease-out;
+}
+dialog.dialog-pop[open]::backdrop {
+  animation: backdrop-fade 160ms ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  dialog.dialog-pop[open],
+  dialog.dialog-pop[open]::backdrop {
+    animation: none;
+  }
+}
