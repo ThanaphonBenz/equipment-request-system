@@ -1,41 +1,54 @@
 # ระบบเบิกจ่ายอุปกรณ์ (Equipment Request System)
 
-เว็บแอปพลิเคชันสำหรับเบิกจ่ายอุปกรณ์ ผู้ใช้ทั่วไปส่งคำขอเบิกได้ และผู้ดูแลระบบอนุมัติหรือปฏิเสธคำขอได้ เมื่ออนุมัติแล้ว ระบบจะตัดจำนวนคงเหลือในสต็อกอัตโนมัติ
-
-รองรับโหมดสว่างและโหมดมืด โดยเลือกสลับได้จากแถบเมนูหรือหน้าเข้าสู่ระบบ และระบบจะจดจำตัวเลือกไว้ในเบราว์เซอร์
-
 **Tech stack:** Next.js 16 (App Router) · TypeScript · MongoDB Atlas + Mongoose · Tailwind CSS · Zod
 
-## การติดตั้งและรันโปรเจกต์
+# ระบบเบิกจ่ายอุปกรณ์ (Equipment Request System)
 
-ต้องมี **Node.js 20.12 ขึ้นไป** (พัฒนาด้วย Node 24)
+**ลิงก์สำหรับใช้งาน (Production):** [https://equipment-request-system.vercel.app/login]
 
-```bash
-# 1. ติดตั้ง dependencies
-npm install
+---
 
-# 2. สร้างไฟล์ตั้งค่า แล้วแก้ค่า MONGODB_URI และ SESSION_SECRET
-cp .env.example .env.local
+## ความต้องการของระบบ (Prerequisites)
+* **Node.js 20.12 ขึ้นไป** (โปรเจคนี้พัฒนาด้วย Node 24)
+* *หมายเหตุ: หากเวอร์ชันต่ำกว่านี้ แนะนำให้ใช้ [nvm](https://github.com) ในการอัปเดตเวอร์ชัน*
 
-# 3. ใส่ข้อมูลตัวอย่างลงฐานข้อมูล
-npm run seed
+---
 
-# 4. รันโหมดพัฒนา
-npm run dev
-```
+## วิธีรันโปรเจคบนเครื่องคอมพิวเตอร์ (Localhost)
 
-เปิด **http://localhost:3000**
+เลือกติดตั้งและรันตามรูปแบบฐานข้อมูลที่ต้องการใช้งาน:
 
-รันแบบ production ด้วย `npm run build` แล้วตามด้วย `npm start` (พอร์ต 3000)
+### รูปแบบที่ 1: ต่อ Database On Cloud (MongoDB Atlas)
+ใช้สำหรับกรณีที่ต้องการดึงข้อมูลจาก Cloud ของ MongoDB Atlas
 
-### การตั้งค่าการเชื่อมต่อฐานข้อมูล (`.env.local`)
+1. **ติดตั้ง Dependencies:**
+   npm install
 
-| ตัวแปร | คำอธิบาย |
-|---|---|
-| `MONGODB_URI` | Connection string จาก MongoDB Atlas (Database → Connect → Drivers) ใส่ชื่อฐานข้อมูลต่อท้าย เช่น `.../equipment_request?retryWrites=true&w=majority` |
-| `SESSION_SECRET` | ข้อความสุ่มยาวๆ สำหรับเซ็น cookie สร้างได้ด้วย `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"` |
+2. **สร้างและตั้งค่า Environment Variables:**
+   cp .env.dev .env.local
 
-> ใน MongoDB Atlas ให้ไปที่ **Network Access** แล้วเพิ่ม IP ของเครื่องที่รัน มิฉะนั้นจะเชื่อมต่อไม่ได้
+3. **รันโปรเจคในโหมดพัฒนา:**
+   npm run dev
+
+### รูปแบบที่ 2: ต่อ Database ในเครื่อง (Localhost)
+ใช้สำหรับกรณีต้องการรันฐานข้อมูลในเครื่องตัวเองทั้งหมด
+
+1. **ติดตั้ง MongoDB Server ลงเครื่อง:** (สำหรับ Windows ผ่าน winget)
+   winget install MongoDB.Server
+
+2. **ติดตั้ง Dependencies:**
+   npm install
+
+3. **สร้างและตั้งค่า Environment Variables:**
+   cp .env.example .env.local
+
+4. **ใส่ข้อมูลตัวอย่าง (Seed Data) ลงฐานข้อมูล:**
+   npm run seed
+
+5. **รันโปรเจคในโหมดพัฒนา:**
+   npm run dev
+
+### ไฟล์ DATABASE MONGODB อยู่ในโฟล์เดอร์ database ที่เป็นนามสกุล .json 
 
 ### ข้อมูลตัวอย่าง (จาก `npm run seed`)
 
@@ -105,7 +118,7 @@ npm run dev
 | GET | `/api/logs?type=&q=&page=` | admin | ประวัติการใช้งาน (type: `requisition` | `equipment` | `auth`), 20 รายการต่อหน้า |
 | PATCH | `/api/requisitions/:id` | admin | `{ status: "approved" \| "rejected" \| "returned", note? }` โดย `note` บังคับเมื่อไม่อนุมัติ (อย่างน้อย 5 ตัวอักษร) |
 
-## กฎทางธุรกิจที่สำคัญ
+## BUSINESS LOGIC คร่าวๆ 
 
 - **เบิกหลายอุปกรณ์ในคำขอเดียว:** บันทึกเป็น 1 แถวต่อ 1 อุปกรณ์ (ตรงกับโครงสร้างตาราง `requisitions` ในโจทย์) แล้วผูกกันด้วย `request_no` เดียวกัน เช่น `REQ-261020-K7Q2` ถ้ามีรายการไหนเกินคงเหลือจะไม่บันทึกเลยสักรายการ และ admin อนุมัติหรือไม่อนุมัติแยกทีละรายการได้
 - **หมายเหตุการพิจารณา:** ไม่อนุมัติต้องระบุเหตุผล ส่วนอนุมัติใส่หมายเหตุได้แต่ไม่บังคับ ระบบเก็บ `admin_note`, `reviewed_by` และ `reviewed_at` ผู้ขอเห็นเหตุผลในหน้าคำขอของฉัน

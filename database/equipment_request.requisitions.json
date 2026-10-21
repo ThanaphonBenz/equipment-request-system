@@ -1,0 +1,856 @@
+[{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f7"
+  },
+  "request_no": "REQ-261008-H1A2",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d9"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e2"
+  },
+  "quantity": 2,
+  "reason": "สัมมนาประจำไตรมาส",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-08T04:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-08T02:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-08T02:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f8"
+  },
+  "request_no": "REQ-261008-H1A2",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d9"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e5"
+  },
+  "quantity": 2,
+  "reason": "สัมมนาประจำไตรมาส",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-08T04:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-08T02:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-08T02:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f9"
+  },
+  "request_no": "REQ-261008-H2K7",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48ee"
+  },
+  "quantity": 1,
+  "reason": "ถ่ายภาพกิจกรรมองค์กร",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-08T09:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-08T07:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-08T07:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48fa"
+  },
+  "request_no": "REQ-261008-H2K7",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48ef"
+  },
+  "quantity": 1,
+  "reason": "ถ่ายภาพกิจกรรมองค์กร",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-08T09:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-08T07:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-08T07:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48fb"
+  },
+  "request_no": "REQ-261009-H3V1",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f6"
+  },
+  "quantity": 1,
+  "reason": "ประชุมคณะกรรมการบริหาร",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-09T05:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-09T03:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-09T03:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48fc"
+  },
+  "request_no": "REQ-261009-H3B4",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48da"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e1"
+  },
+  "quantity": 3,
+  "reason": "อบรมระบบบัญชีใหม่",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-09T09:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-09T07:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-09T07:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48fd"
+  },
+  "request_no": "REQ-261010-H4M2",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f0"
+  },
+  "quantity": 4,
+  "reason": "จัดเตรียมห้องอบรม",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-10T05:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-10T03:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-10T03:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48fe"
+  },
+  "request_no": "REQ-261010-H4M2",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f1"
+  },
+  "quantity": 2,
+  "reason": "จัดเตรียมห้องอบรม",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-10T05:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-10T03:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-10T03:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48ff"
+  },
+  "request_no": "REQ-261011-H5C6",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d9"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e4"
+  },
+  "quantity": 10,
+  "reason": "เปลี่ยนเมาส์และคีย์บอร์ดห้องปฏิบัติการ",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-11T05:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-11T03:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-11T03:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4900"
+  },
+  "request_no": "REQ-261011-H5C6",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d9"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e7"
+  },
+  "quantity": 10,
+  "reason": "เปลี่ยนเมาส์และคีย์บอร์ดห้องปฏิบัติการ",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-11T05:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-11T03:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-11T03:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4901"
+  },
+  "request_no": "REQ-261012-H7D8",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48da"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e2"
+  },
+  "quantity": 4,
+  "reason": "งานนิทรรศการ",
+  "status": "rejected",
+  "admin_note": "ช่วงวันดังกล่าวมีประชุมใหญ่ใช้โปรเจกเตอร์อยู่ จำนวนไม่เพียงพอ",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-12T06:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-12T04:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-12T04:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4902"
+  },
+  "request_no": "REQ-261012-H8P5",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f2"
+  },
+  "quantity": 2,
+  "reason": "ปฏิบัติงานนอกสถานที่",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-12T10:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-12T08:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-12T08:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4903"
+  },
+  "request_no": "REQ-261013-H9E1",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d9"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e1"
+  },
+  "quantity": 2,
+  "reason": "ปฏิบัติงานนอกสถานที่",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-13T08:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-13T06:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-13T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4904"
+  },
+  "request_no": "REQ-261013-H9E1",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d9"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e4"
+  },
+  "quantity": 2,
+  "reason": "ปฏิบัติงานนอกสถานที่",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-13T08:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-13T06:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-13T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4905"
+  },
+  "request_no": "REQ-261014-J1Q3",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48da"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48ec"
+  },
+  "quantity": 1,
+  "reason": "งานเลี้ยงสังสรรค์ประจำปี",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-14T11:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-14T09:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-14T09:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4906"
+  },
+  "request_no": "REQ-261014-J1Q3",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48da"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48ed"
+  },
+  "quantity": 2,
+  "reason": "งานเลี้ยงสังสรรค์ประจำปี",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-14T11:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-14T09:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-14T09:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4907"
+  },
+  "request_no": "REQ-261015-J2F3",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48da"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e5"
+  },
+  "quantity": 3,
+  "reason": "ประชุมใหญ่สามัญประจำปี",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-15T04:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-15T02:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-15T02:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4908"
+  },
+  "request_no": "REQ-261016-J4G5",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d9"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e1"
+  },
+  "quantity": 4,
+  "reason": "อบรมพนักงานใหม่รุ่นที่ 2",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-16T10:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-16T08:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-16T08:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4909"
+  },
+  "request_no": "REQ-261016-J5R8",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e9"
+  },
+  "quantity": 2,
+  "reason": "สำรวจข้อมูลภาคสนาม",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-16T06:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-16T04:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-16T04:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab490a"
+  },
+  "request_no": "REQ-261017-J6H7",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48da"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e4"
+  },
+  "quantity": 6,
+  "reason": "ใช้ประชุมและนำเสนองาน",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-17T05:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-17T03:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-17T03:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab490b"
+  },
+  "request_no": "REQ-261017-J6H7",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48da"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e2"
+  },
+  "quantity": 1,
+  "reason": "ใช้ประชุมและนำเสนองาน",
+  "status": "returned",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-17T05:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-17T03:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-17T03:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab490c"
+  },
+  "request_no": "REQ-261017-J7S1",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f3"
+  },
+  "quantity": 1,
+  "reason": "สแกนเอกสารเก่าเข้าระบบ",
+  "status": "rejected",
+  "admin_note": "เครื่องสแกนอยู่ระหว่างซ่อมบำรุง กรุณาติดต่อฝ่ายไอทีเพื่อใช้เครื่องสำรอง",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-17T09:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-17T07:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-17T07:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab490d"
+  },
+  "request_no": "REQ-261018-A1B2",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d9"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e1"
+  },
+  "quantity": 2,
+  "reason": "ใช้สำหรับอบรมพนักงานใหม่",
+  "status": "approved",
+  "admin_note": "รับอุปกรณ์ได้ที่ห้องพัสดุ ชั้น 2",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-18T04:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-18T02:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-18T02:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab490e"
+  },
+  "request_no": "REQ-261018-A3T6",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e9"
+  },
+  "quantity": 4,
+  "reason": "สำรวจข้อมูลภาคสนามรอบที่ 2",
+  "status": "approved",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-18T08:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-18T06:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-18T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab490f"
+  },
+  "request_no": "REQ-261019-C3D4",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48da"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e3"
+  },
+  "quantity": 8,
+  "reason": "ติดตั้งห้องประชุมออนไลน์ชั่วคราว",
+  "status": "approved",
+  "admin_note": "",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-19T09:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-19T07:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-19T07:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4910"
+  },
+  "request_no": "REQ-261019-K8L9",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d9"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e5"
+  },
+  "quantity": 1,
+  "reason": "ทดแทนอุปกรณ์ที่ชำรุด",
+  "status": "rejected",
+  "admin_note": "กรุณาส่งไมโครโฟนตัวที่ชำรุดเข้าซ่อมก่อน แล้วจึงขอเบิกทดแทน",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-19T11:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-19T09:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-19T09:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4911"
+  },
+  "request_no": "REQ-261020-B6U4",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48ef"
+  },
+  "quantity": 4,
+  "reason": "ถ่ายทำวิดีโอประชาสัมพันธ์",
+  "status": "approved",
+  "admin_note": "กรุณาคืนภายในวันศุกร์นี้",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-20T04:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-20T02:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-20T02:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4912"
+  },
+  "request_no": "REQ-261020-B6U4",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f0"
+  },
+  "quantity": 3,
+  "reason": "ถ่ายทำวิดีโอประชาสัมพันธ์",
+  "status": "approved",
+  "admin_note": "กรุณาคืนภายในวันศุกร์นี้",
+  "reviewed_by": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "reviewed_at": {
+    "$date": "2026-10-20T04:15:00.000Z"
+  },
+  "created_at": {
+    "$date": "2026-10-20T02:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-20T02:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4913"
+  },
+  "request_no": "REQ-261020-E5F6",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48da"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e2"
+  },
+  "quantity": 1,
+  "reason": "ประชุมนำเสนองานประจำเดือน",
+  "status": "pending",
+  "admin_note": "",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "created_at": {
+    "$date": "2026-10-20T03:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-20T03:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4914"
+  },
+  "request_no": "REQ-261020-E5F6",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48da"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e5"
+  },
+  "quantity": 2,
+  "reason": "ประชุมนำเสนองานประจำเดือน",
+  "status": "pending",
+  "admin_note": "",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "created_at": {
+    "$date": "2026-10-20T03:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-20T03:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab4915"
+  },
+  "request_no": "REQ-261021-G7H8",
+  "user_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d9"
+  },
+  "equipment_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e4"
+  },
+  "quantity": 5,
+  "reason": "เปลี่ยนเมาส์ที่ชำรุดในห้องปฏิบัติการ",
+  "status": "pending",
+  "admin_note": "",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "created_at": {
+    "$date": "2026-10-21T02:15:00.000Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T02:15:00.000Z"
+  }
+}]

@@ -1,0 +1,464 @@
+[{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e7"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48dc"
+  },
+  "item_code": "EQ-007",
+  "name": "คีย์บอร์ดไร้สาย",
+  "total_qty": 20,
+  "available_qty": 20,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e4"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48dc"
+  },
+  "item_code": "EQ-004",
+  "name": "เมาส์ไร้สาย",
+  "total_qty": 30,
+  "available_qty": 30,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e2"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48dd"
+  },
+  "item_code": "EQ-002",
+  "name": "โปรเจกเตอร์ Epson",
+  "total_qty": 5,
+  "available_qty": 5,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e5"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48de"
+  },
+  "item_code": "EQ-005",
+  "name": "ไมโครโฟนไร้สาย",
+  "total_qty": 6,
+  "available_qty": 6,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e6"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48df"
+  },
+  "item_code": "EQ-006",
+  "name": "เครื่องพิมพ์เลเซอร์",
+  "total_qty": 2,
+  "available_qty": 2,
+  "status": "unavailable",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e1"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48dc"
+  },
+  "item_code": "EQ-001",
+  "name": "โน้ตบุ๊ก Dell Latitude",
+  "total_qty": 10,
+  "available_qty": 8,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e3"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48de"
+  },
+  "item_code": "EQ-003",
+  "name": "กล้องเว็บแคม Logitech",
+  "total_qty": 8,
+  "available_qty": 0,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f0"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e0"
+  },
+  "item_code": "EQ-016",
+  "name": "สาย HDMI 3 เมตร",
+  "total_qty": 15,
+  "available_qty": 12,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48ef"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48de"
+  },
+  "item_code": "EQ-015",
+  "name": "ขาตั้งกล้อง",
+  "total_qty": 5,
+  "available_qty": 1,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48ee"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48de"
+  },
+  "item_code": "EQ-014",
+  "name": "กล้องถ่ายภาพ Canon DSLR",
+  "total_qty": 3,
+  "available_qty": 3,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48ec"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48dd"
+  },
+  "item_code": "EQ-012",
+  "name": "ทีวี 55 นิ้วแบบเคลื่อนที่",
+  "total_qty": 2,
+  "available_qty": 2,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48ed"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48de"
+  },
+  "item_code": "EQ-013",
+  "name": "ลำโพงบลูทูธ",
+  "total_qty": 4,
+  "available_qty": 4,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48eb"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48dd"
+  },
+  "item_code": "EQ-011",
+  "name": "เลเซอร์พอยเตอร์",
+  "total_qty": 10,
+  "available_qty": 10,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48ea"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48dd"
+  },
+  "item_code": "EQ-010",
+  "name": "จอรับภาพแบบขาตั้ง",
+  "total_qty": 3,
+  "available_qty": 3,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f4"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48df"
+  },
+  "item_code": "EQ-020",
+  "name": "เครื่องเคลือบบัตร",
+  "total_qty": 3,
+  "available_qty": 3,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f2"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e0"
+  },
+  "item_code": "EQ-018",
+  "name": "Pocket WiFi",
+  "total_qty": 4,
+  "available_qty": 4,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f5"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e0"
+  },
+  "item_code": "EQ-021",
+  "name": "อะแดปเตอร์ USB-C",
+  "total_qty": 10,
+  "available_qty": 10,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f1"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e0"
+  },
+  "item_code": "EQ-017",
+  "name": "ปลั๊กพ่วง 5 ช่อง",
+  "total_qty": 12,
+  "available_qty": 12,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f3"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48df"
+  },
+  "item_code": "EQ-019",
+  "name": "เครื่องสแกนเอกสาร",
+  "total_qty": 2,
+  "available_qty": 2,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48f6"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48dd"
+  },
+  "item_code": "EQ-022",
+  "name": "เครื่องฉายภาพ Visualizer รุ่นเก่า",
+  "total_qty": 2,
+  "available_qty": 2,
+  "status": "available",
+  "deleted_at": {
+    "$date": "2026-10-18T15:12:44.228Z"
+  },
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e8"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48dc"
+  },
+  "item_code": "EQ-008",
+  "name": "จอมอนิเตอร์ 24 นิ้ว",
+  "total_qty": 8,
+  "available_qty": 8,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48e9"
+  },
+  "category_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48dc"
+  },
+  "item_code": "EQ-009",
+  "name": "แท็บเล็ต iPad",
+  "total_qty": 6,
+  "available_qty": 2,
+  "status": "available",
+  "deleted_at": null,
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.233Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d9"
+  },
+  "username": "somchai",
+  "fullname": "สมชาย ใจดี",
+  "role": "user",
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.126Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.126Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "username": "admin",
+  "fullname": "ผู้ดูแลระบบ",
+  "role": "admin",
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.125Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.125Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48db"
+  },
+  "username": "wichai",
+  "fullname": "วิชัย ขยันยิ่ง",
+  "role": "user",
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.126Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.126Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48da"
+  },
+  "username": "somying",
+  "fullname": "สมหญิง รักงาน",
+  "role": "user",
+  "created_at": {
+    "$date": "2026-10-21T15:12:44.126Z"
+  },
+  "updated_at": {
+    "$date": "2026-10-21T15:12:44.126Z"
+  },
+  "__v": 0
+}]

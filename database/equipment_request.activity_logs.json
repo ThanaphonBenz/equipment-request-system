@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "6ad8d6d17ba57916d2725aa6"
+  },
+  "actor_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "actor_username": "admin",
+  "actor_fullname": "ผู้ดูแลระบบ",
+  "action": "auth.login",
+  "target_type": "auth",
+  "target_id": {
+    "$oid": "6ad8d66c7cc2c0fd17ab48d8"
+  },
+  "target_label": "admin",
+  "description": "เข้าสู่ระบบ",
+  "created_at": {
+    "$date": "2026-10-21T15:14:25.229Z"
+  },
+  "__v": 0
+}]
