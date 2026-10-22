@@ -19,8 +19,17 @@ const STATUS_LOG: Record<"approved" | "rejected" | "returned", { action: LogActi
 
 const STATUSES: RequisitionStatus[] = ["pending", "approved", "rejected", "returned", "cancelled"];
 
-// GET /api/requisitions?scope=all&status=pending
+// from/to เป็นเวลาแบบ ISO (ฝั่ง client แปลงขอบวันตามเวลาท้องถิ่นมาให้แล้ว)
+function parseDateParam(value: string | null): Date | undefined {
+  if (!value) return undefined;
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) throw new ApiError(400, "วันที่ไม่ถูกต้อง");
+  return date;
+}
+
+// GET /api/requisitions?scope=all&status=pending&from=<ISO>&to=<ISO>
 // ผู้ใช้ทั่วไปเห็นเฉพาะคำขอของตัวเอง, admin ส่ง scope=all เพื่อดูทั้งหมด
+// กรองตามวันที่ส่งคำขอ: created_at >= from และ < to
 export async function index(request: NextRequest) {
   try {
     const user = await requireUser();
@@ -36,9 +45,14 @@ export async function index(request: NextRequest) {
       throw new ApiError(400, "status ไม่ถูกต้อง");
     }
 
+    const from = parseDateParam(params.get("from"));
+    const to = parseDateParam(params.get("to"));
+
     const requisitions = await listRequisitions({
       userId: scope === "all" ? undefined : user.id,
       status: (statusParam as RequisitionStatus) || undefined,
+      from,
+      to,
     });
     return json({ requisitions });
   } catch (err) {

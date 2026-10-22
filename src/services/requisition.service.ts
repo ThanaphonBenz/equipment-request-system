@@ -61,11 +61,19 @@ async function findPopulatedById(id: string): Promise<RequisitionDTO> {
 export async function listRequisitions(filter: {
   userId?: string;
   status?: RequisitionStatus;
+  from?: Date;
+  to?: Date;
 }): Promise<RequisitionDTO[]> {
   await connectDB();
   const query: QueryFilter<Requisition> = {};
   if (filter.userId) query.user_id = filter.userId;
   if (filter.status) query.status = filter.status;
+  if (filter.from || filter.to) {
+    query.created_at = {
+      ...(filter.from && { $gte: filter.from }),
+      ...(filter.to && { $lt: filter.to }),
+    };
+  }
   return findPopulated(query);
 }
 

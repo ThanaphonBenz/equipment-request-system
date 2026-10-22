@@ -4,6 +4,7 @@ import { ClipboardCheck, ClipboardX, MessageSquareText, Package, RotateCcw, type
 import { useRouter } from "next/navigation";
 import { Fragment, useEffect, useState } from "react";
 import { ConfirmCard, useConfirm, type ConfirmOptions } from "@/components/ConfirmDialog";
+import { DateRangePicker, fromKey, type DateRange } from "@/components/DateRangePicker";
 import { StatusBadge } from "@/components/StatusBadge";
 import { apiFetch } from "@/lib/api-client";
 import { REJECT_NOTE_MIN } from "@/lib/validations";
@@ -64,6 +65,7 @@ export function RequisitionTable({ mode, initialStatus = "" }: { mode: Mode; ini
   const router = useRouter();
   const { ask, confirm, dialog } = useConfirm();
   const [status, setStatus] = useState<RequisitionStatus | "">(initialStatus);
+  const [range, setRange] = useState<DateRange>({ from: "", to: "" });
   const [rows, setRows] = useState<RequisitionDTO[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -74,6 +76,13 @@ export function RequisitionTable({ mode, initialStatus = "" }: { mode: Mode; ini
     const params = new URLSearchParams();
     if (mode === "admin") params.set("scope", "all");
     if (status) params.set("status", status);
+    // แปลงเป็นขอบวันตามเวลาท้องถิ่น: from = 00:00 ของวันเริ่ม, to = 00:00 ของวันถัดจากวันสิ้นสุด
+    if (range.from) params.set("from", fromKey(range.from).toISOString());
+    if (range.to) {
+      const end = fromKey(range.to);
+      end.setDate(end.getDate() + 1);
+      params.set("to", end.toISOString());
+    }
 
     let ignore = false;
     apiFetch<{ requisitions: RequisitionDTO[] }>(`/api/requisitions?${params}`)
@@ -83,13 +92,20 @@ export function RequisitionTable({ mode, initialStatus = "" }: { mode: Mode; ini
     return () => {
       ignore = true;
     };
-  }, [mode, status]);
+  }, [mode, status, range]);
 
   function changeFilter(value: RequisitionStatus | "") {
     if (value === status) return;
     setLoading(true);
     setError("");
     setStatus(value);
+  }
+
+  function changeRange(value: DateRange) {
+    if (value.from === range.from && value.to === range.to) return;
+    setLoading(true);
+    setError("");
+    setRange(value);
   }
 
   async function handleAction(row: RequisitionDTO, action: Action) {
@@ -171,7 +187,7 @@ export function RequisitionTable({ mode, initialStatus = "" }: { mode: Mode; ini
   return (
     <div className="space-y-4">
       {dialog}
-      <div className="flex flex-wrap gap-2">
+      <div className="relative flex flex-wrap items-center gap-2">
         {FILTERS.map((f) => (
           <button
             key={f.value}
@@ -185,6 +201,10 @@ export function RequisitionTable({ mode, initialStatus = "" }: { mode: Mode; ini
             {f.label}
           </button>
         ))}
+
+        <div className="sm:ml-auto">
+          <DateRangePicker value={range} onChange={changeRange} />
+        </div>
       </div>
 
       {notice && (
@@ -252,7 +272,8 @@ export function RequisitionTable({ mode, initialStatus = "" }: { mode: Mode; ini
                                 </div>
                               )}
                               {r.status === "approved" && (
-                                <ActionButton tone="gray" disabled={busyId === r.id} onClick={() => handleAction(r, "returned")}>
+                                <ActionButton tone="indigo" disabled={busyId === r.id} onClick={() => handleAction(r, "returned")}>
+                                  <RotateCcw className="h-3.5 w-3.5" />
                                   บันทึกการคืน
                                 </ActionButton>
                               )}
@@ -311,7 +332,7 @@ function groupByRequest(rows: RequisitionDTO[]) {
 const TONES = {
   green: "bg-emerald-600 text-white hover:bg-emerald-700",
   red: "bg-rose-600 text-white hover:bg-rose-700",
-  gray: "border border-slate-300 bg-white text-slate-700 hover:bg-slate-50",
+  indigo: "bg-indigo-600 text-white hover:bg-indigo-700",
 };
 
 function ActionButton({
@@ -329,7 +350,7 @@ function ActionButton({
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`whitespace-nowrap rounded-md px-3 py-1 text-xs font-medium disabled:opacity-50 ${TONES[tone]}`}
+      className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded-md px-3 py-1 text-xs font-medium disabled:opacity-50 ${TONES[tone]}`}
     >
       {children}
     </button>
