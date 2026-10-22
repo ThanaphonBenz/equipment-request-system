@@ -104,7 +104,7 @@ export function EquipmentTable() {
                   aria-label="กรองตามหมวดหมู่"
                   // ไม่ล็อกความกว้าง: <select> จะกว้างตามตัวเลือกที่ยาวที่สุดเอง (จำกัดสูงสุดไว้ไม่ให้เบียดช่องค้นหา)
                   className={`w-full min-w-0 appearance-none truncate rounded-lg border bg-white py-2 pl-9 pr-9 text-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200 sm:w-auto sm:min-w-52 sm:max-w-sm ${
-                    category ? "border-indigo-300 text-indigo-700" : "border-slate-300 text-slate-700"
+                    category ? "border-indigo-300 text-slate-900" : "border-slate-300 text-slate-700"
                   }`}
                 >
                   {options.map((o) => (
