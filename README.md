@@ -1,8 +1,5 @@
 # ระบบเบิกจ่ายอุปกรณ์ (Equipment Request System)
-
 **Tech stack:** Next.js 16 (App Router) · TypeScript · MongoDB Atlas + Mongoose · Tailwind CSS · Zod
-
-# ระบบเบิกจ่ายอุปกรณ์ (Equipment Request System)
 
 **ลิงก์สำหรับใช้งาน (Production):** [https://equipment-request-system.vercel.app/login]
 
@@ -120,7 +117,7 @@
 | GET | `/api/logs?type=&q=&page=` | admin | ประวัติการใช้งาน (type: `requisition` | `equipment` | `auth`), 20 รายการต่อหน้า |
 | PATCH | `/api/requisitions/:id` | admin | `{ status: "approved" \| "rejected" \| "returned", note? }` โดย `note` บังคับเมื่อไม่อนุมัติ (อย่างน้อย 5 ตัวอักษร) |
 
-## BUSINESS LOGIC คร่าวๆ 
+## BUSINESS LOGIC
 
 - **เบิกหลายอุปกรณ์ในคำขอเดียว:** บันทึกเป็น 1 แถวต่อ 1 อุปกรณ์ (ตรงกับโครงสร้างตาราง `requisitions` ในโจทย์) แล้วผูกกันด้วย `request_no` เดียวกัน เช่น `REQ-261020-K7Q2` ถ้ามีรายการไหนเกินคงเหลือจะไม่บันทึกเลยสักรายการ และ admin อนุมัติหรือไม่อนุมัติแยกทีละรายการได้
 - **หมายเหตุการพิจารณา:** ไม่อนุมัติต้องระบุเหตุผล ส่วนอนุมัติใส่หมายเหตุได้แต่ไม่บังคับ ระบบเก็บ `admin_note`, `reviewed_by` และ `reviewed_at` ผู้ขอเห็นเหตุผลในหน้าคำขอของฉัน
