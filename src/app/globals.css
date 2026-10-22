@@ -32,6 +32,16 @@ body {
   --color-rose-200: #743447;
   --color-sky-50: #15354a;
   --color-violet-50: #35264f;
+  /* สีทึบ (ปุ่ม, แถบสต็อก, จุดสถานะ): ลดความสดลงไม่ให้แสบตาบนพื้นมืด */
+  --color-emerald-500: #2f9a78;
+  --color-emerald-600: #1f7f62;
+  --color-emerald-700: #196b53;
+  --color-amber-500: #c4973c;
+  --color-rose-500: #c45a70;
+  --color-rose-600: #b0455d;
+  --color-rose-700: #963a4f;
+  --color-indigo-600: #5b54c9;
+  --color-indigo-700: #4c46b0;
 }
 
 .dark [class~="bg-white"] {
@@ -76,13 +86,13 @@ body {
 .dark [class~="text-emerald-800"],
 .dark [class~="text-emerald-700"],
 .dark [class~="text-emerald-600"] {
-  color: #6ee7b7;
+  color: #86cfb3;
 }
 
 .dark [class~="text-amber-800"],
 .dark [class~="text-amber-700"],
 .dark [class~="text-amber-600"] {
-  color: #fcd34d;
+  color: #e2c27e;
 }
 
 .dark [class~="text-rose-900"],
@@ -90,7 +100,7 @@ body {
 .dark [class~="text-rose-700"],
 .dark [class~="text-rose-600"],
 .dark [class~="text-rose-500"] {
-  color: #fda4af;
+  color: #e8a1ad;
 }
 
 .dark [class~="text-sky-600"] {
@@ -114,6 +124,11 @@ body {
 .dark input::placeholder,
 .dark textarea::placeholder {
   color: #94a3b8;
+}
+
+/* dropdown ในโหมดมืด: ข้อความสีขาวเสมอ (ชนะ text-indigo-* ตอนเลือกตัวกรองอยู่) */
+.dark select[class] {
+  color: #ffffff;
 }
 
 /* หน้า login: วงโคจรอุปกรณ์ + จุดสถานะ + แจ้งเตือน */

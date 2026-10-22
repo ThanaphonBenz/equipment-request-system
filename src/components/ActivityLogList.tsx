@@ -216,7 +216,10 @@ function LogRow({ log }: { log: ActivityLogDTO }) {
             {dateFormatter.format(new Date(log.created_at))}
           </time>
         </div>
-        <p className="mt-0.5 text-sm text-slate-600">{log.description}</p>
+        {/* เช่น "เข้าสู่ระบบ" ที่ description ซ้ำกับหัวข้อ: ไม่ต้องแสดงซ้ำ */}
+        {log.description && log.description !== ACTION_LABELS[log.action] && (
+          <p className="mt-0.5 text-sm text-slate-600">{log.description}</p>
+        )}
 
         {changes.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1.5">
